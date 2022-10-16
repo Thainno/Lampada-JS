@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97vw;
+    height: 97vh;
+    background-color: rgb(176, 225, 233);
+}
+
+section {    
+    background-color: #1e1e1e;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #494949;
+}
+
+header, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 5em;
+    margin: 0 0 10px;
+}
+
+#turnOn, #turnOff {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+    height: 50px;
+    margin: 12px 30px 40px;
+}
+
+#turnOn {
+    background-color: green;
+    border-color: white;
+}
+
+#turnOn:hover {
+    background-color: rgb(1, 90, 1);
+    cursor: pointer;    
+    animation: aumentarBotao 0.1s forwards;
+}
+
+#turnOff {
+    background-color: red;
+}
+
+#turnOff:hover {
+    background-color: rgb(146, 2, 2);
+    cursor: pointer;
+    animation: aumentarBotao 0.1s forwards;
+}
+
+#lamp {
+    border-radius: 100px;
+    padding: 50px;
+}
+
+#lamp:hover {        
+    background: radial-gradient(rgb(187, 187, 39),rgb(122, 122, 40)30%, #1e1e1e 70%);
+    animation: aumentarBotao 0.1s forwards;
+}
+
+@keyframes aumentarBotao {
+    100%{
+        transform: scale(1.1);
+    }
+}
+
