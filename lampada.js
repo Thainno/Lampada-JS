@@ -9,21 +9,22 @@ function isLampBroken () {
 
 function lampOn () {
     if (!isLampBroken()) {
-        lamp.src = "/imagens/ligada.jpg"; 
+        lamp.src = "./imagens/ligada.jpg"; 
         lamp.style.background = "radial-gradient(rgb(187, 187, 39),rgb(122, 122, 40)30%, #1e1e1e 70%)"; 
     }
 }
 
 function lampOff () {
     if (!isLampBroken()) {
-        lamp.src = "/imagens/desligada.jpg";
+        lamp.src = "./imagens/desligada.jpg";
         lamp.style.background = "none";
     }
 }
 
 function lampBroken () {
     if (!isLampBroken()) {
-        lamp.src = "/imagens/quebrada.jpg";
+        lamp.src = "./imagens/quebrada.jpg";
+        lamp.style.background = "none";
     }
 }
 
